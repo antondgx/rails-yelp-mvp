@@ -1,0 +1,9 @@
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating %>
+  <%= f.submit "Submit review", class: "btn btn-primary" %>
+<% end %>
+
+<!-- simple form uses @restaurant and @ review to send to create action on
+/restaurants/:restaurant_id/reviews
+ @review = Review.new thats why go to create action -->
